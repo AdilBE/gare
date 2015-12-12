@@ -1,5 +1,10 @@
+# circle.yml
+machine:
+  services:
+    - docker
+
 deployment:
-  dockerhub:
+  hub:
     branch: master
     commands:
       - $DOCKER_GARE_TRIGGER
