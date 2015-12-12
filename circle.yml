@@ -3,6 +3,10 @@ machine:
   services:
     - docker
 
+general:
+  artifacts:
+    - "gare/target/gare-webservice.war"
+
 deployment:
   hub:
     branch: master
