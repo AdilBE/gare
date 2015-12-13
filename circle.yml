@@ -3,12 +3,14 @@ machine:
   services:
     - docker
 
-general:
-  artifacts:
-    - "gare/target/gare-webservice.war"
+dependencies:
+  override:
+    - docker info
+    - docker build -t aben/gare .
 
 deployment:
-  hub:
+  hub: 
     branch: master
     commands:
-      - $DOCKER_GARE_TRIGGER
+      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+      - docker push aben/gare

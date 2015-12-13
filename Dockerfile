@@ -5,4 +5,4 @@ MAINTAINER Adil BENDOULA <adil.bendoula@gmail.com>
 
 
 # Deploy Gare
-COPY gare-webservice.war $CATALINA_HOME/webapps/
+COPY ./target/gare-webservice.war $CATALINA_HOME/webapps/
