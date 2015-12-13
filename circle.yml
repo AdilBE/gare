@@ -10,6 +10,9 @@ dependencies:
     - docker build -t aben/gare .
 
 test:
+  override:
+    - docker run -d -p 8080:8080 aben/gare; sleep 10
+    - curl --retry 10 --retry-delay 5 -v http://localhost:8080/gare-webservice/swagger/
 
 deployment:
   hub: 
