@@ -9,6 +9,8 @@ dependencies:
     - mvn compile test package
     - docker build -t aben/gare .
 
+test:
+
 deployment:
   hub: 
     branch: master
