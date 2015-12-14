@@ -33,5 +33,6 @@ public class ApplicationCache extends ConcurrentHashMap<Integer, Application> {
 	private void init(){
 		put(1, DataHelper.createApplicationFrom(1, "Application 1", "Application 1 description", Position.FRONTOFFICE));
 		put(2, DataHelper.createApplicationFrom(2, "Application 2", "Application 2 description", Position.FRONTOFFICE));
+		put(3, DataHelper.createApplicationFrom(2, "Application 3", "Application 3 description", Position.BACKOFFICE));
 	}
 }
