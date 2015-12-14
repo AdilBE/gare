@@ -65,7 +65,7 @@
 		<property name="resourcePackage" value="fr.omega.app.mdm.gare" />
 		<property name="version" value="1.0" />
 		<property name="basePath" value="http://localhost:8080/gare-webservice/rest" />
-		<property name="title" value="GARE Rest Services Model V1.2s" />
+		<property name="title" value="GARE Rest Services Model V1.3s" />
 		<property name="description" value="GARE Rest Services Model with Swagger, Spring and CXF" />
 		<property name="contact" value="adil.bendoula@gmail.com" />
 		<property name="scan" value="true" />
