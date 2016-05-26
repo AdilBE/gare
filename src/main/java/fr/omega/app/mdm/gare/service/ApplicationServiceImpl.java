@@ -32,6 +32,7 @@ import fr.omega.app.mdm.gare.data.Application;
 
 @Path("/application-api/")
 @Api(value = "/application-api", description = "All allowed operations about applications ")
+//TODO Handle Runtime Errors, try catch throwable and send a friendly message to the client
 public class ApplicationServiceImpl implements ApplicationService {
 
 	@Autowired

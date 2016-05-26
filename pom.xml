@@ -54,6 +54,12 @@
 			<version>2.7.1</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-transports-http-jetty</artifactId>
+			<version>2.7.1</version>
+		</dependency>
+
 		<!-- enable JMX -->
 		<dependency>
 			<groupId>org.apache.cxf</groupId>
