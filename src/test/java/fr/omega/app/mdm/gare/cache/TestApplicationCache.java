@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import fr.omega.app.mdm.gare.data.Position;
 import fr.omega.app.mdm.gare.helper.DataHelper;
+import fr.omega.app.mdm.gare.cache.ApplicationCache;
 
 import static org.junit.Assert.*;
 
