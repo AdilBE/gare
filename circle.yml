@@ -7,7 +7,7 @@ dependencies:
   override:
     - docker info
     - mvn compile test package
-    - docker build -t aben/gare .
+    - docker build -t aben/rest-api-swagger .
 
 test:
   override:
@@ -19,4 +19,4 @@ deployment:
     branch: master
     commands:
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-      - docker push aben/gare
+      - docker push aben/rest-api-swagger
